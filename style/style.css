@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.logo {
+    height: 1em;
+}
+
+
+/***** Navbar CSS******************/
+
+
+.navbar {
+    margin-top: 1px;
+    background: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar-brand {
+    margin-left: 10em;
+}
+
+.navbar-toggler {
+    border: 0;
+    width: 1em;
+    margin-right: 1em;
+}
+
+@media screen and (max-width:800px) {
+    .navbar-brand {
+        margin-left: 0px;
+    }
+
+    .name-nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1300px) {
+    .navbar ul {
+        margin-left: 35em
+    }
+
+    .navbar-brand {
+        margin-left: 5em;
+    }
+
+    .name-nav {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:1300px) {
+    .navbar ul {
+        margin-left: 40em;
+    }
+}
+
+.na .name-nav {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15pt;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .nav-link.active {
+    color: #1AE0EC;
+}
+
+/***** Div1 CSS******************/
+
+.head {
+    background: #1AE0EC;
+    height: 1px;
+}
+
+.oppening {
+    margin-top: 2em;
+    background: #13E8F163 0% 0% no-repeat padding-box;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 60vmin;
+}
+
+.oppening .item,
+.pre-projects .item,
+.about .item {
+    padding: 1em;
+    text-align: center;
+    width: 90vmin;
+}
+
+
+.item h1 {
+    font-size: 6.2vmin;
+    font-weight: 500;
+}
+
+.item p {
+    font-size: 2vmin;
+}
+
+.tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    font-size: 14pt;
+}
+
+.tech .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+
+}
+
+.about {
+    background-color: white;
+    box-shadow: 0 1px 5px #bbb inset;
+    height: 80vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about .item {
+    padding: 0.5em;
+}
+
+.about .item img {
+    width: 10vmin;
+}
+
+.about .item a {
+    padding: 3px 25px 3px 25px;
+    background-color: #1AE0EC;
+    text-decoration: none;
+    color: black;
+    border-radius: 25px;
+}
+
+.pre-projects {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    margin-bottom: 0;
+}
+
+.projects {
+    margin-top: 0;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 14pt;
+    padding-bottom: 10vh;
+}
+
+.card {
+    width: 17em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25em;
+    box-shadow: 1px 1px 10px #ccc;
+    border: 0;
+    margin: 1em;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-top {
+    padding: 1vmin;
+    width: 100%;
+    height: 45%;
+}
+
+a.btn {
+    font-size: 0.7em;
+    width: fit-content;
+    background-color: #1AE0EC;
+    text-decoration: none;
+    color: black;
+    border-radius: 25px;
+    border: 0;
+    margin: auto;
+}
+
+.tech-pro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    font-size: 14pt;
+}
+
+.tech-pro .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 0;
+}
+
+.contact {
+    background-color: #3A3A3A;
+    height: 80vmin;
+    display: flex;
+}
+
+.contact .co-img {
+    width: 50%;
+}
+
+.contact .co-form {
+    direction: rtl;
+    margin: 3em;
+    width: 50%;
+    color: white;
+}
+
+.contact .co-img img {
+    width: 40vw;
+    margin-left: 2em;
+}
