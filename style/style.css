@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Dancing+Script:wght@400..700&family=Heebo:wght@100..900&family=Satisfy&family=Varela+Round&display=swap');
 
 * {
     margin: 0;
@@ -16,55 +16,27 @@
 
 
 .navbar {
+    width: 100%;
     margin-top: 1px;
     background: #ffffff;
     position: fixed;
-    width: 100%;
     z-index: 10;
+    justify-content: center;
 }
 
-.navbar-brand {
-    margin-left: 10em;
+.nav_cnt {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.navbar-toggler {
-    border: 0;
-    width: 1em;
-    margin-right: 1em;
+.navbar .logo_name {
+    display: flex;
+    align-items: center;
+    height: fit-content;
 }
 
-@media screen and (max-width:800px) {
-    .navbar-brand {
-        margin-left: 0px;
-    }
-
-    .name-nav {
-        display: none;
-    }
-}
-
-@media screen and (min-width:800px) and (max-width:1300px) {
-    .navbar ul {
-        margin-left: 35em
-    }
-
-    .navbar-brand {
-        margin-left: 5em;
-    }
-
-    .name-nav {
-        display: none;
-    }
-
-}
-
-@media screen and (min-width:1300px) {
-    .navbar ul {
-        margin-left: 40em;
-    }
-}
-
-.na .name-nav {
+.logo_name .name-nav {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -74,9 +46,25 @@
     color: black;
 }
 
+.navbar .nav-link {
+    text-align: center;
+}
+
 .navbar .nav-link.active {
     color: #1AE0EC;
 }
+
+@media screen and (max-width:500px),
+(max-height:600px) {
+    .nav_cnt {
+        width: 100%;
+    }
+
+    .logo_name .name-nav {
+        display: none;
+    }
+}
+
 
 /***** Div1 CSS******************/
 
@@ -85,13 +73,14 @@
     height: 1px;
 }
 
+/**********************************************************************/
 .oppening {
     margin-top: 2em;
     background: #13E8F163 0% 0% no-repeat padding-box;
     display: grid;
     align-items: center;
     justify-content: center;
-    height: 60vmin;
+    height: 40vmin;
 }
 
 .oppening .item,
@@ -106,12 +95,18 @@
 .item h1 {
     font-size: 6.2vmin;
     font-weight: 500;
+    font-family: "Heebo", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-optical-sizing: auto;
 }
 
 .item p {
     font-size: 2vmin;
+    font-family: "Heebo", sans-serif;
 }
 
+/**********************************************************************/
 .tech {
     display: flex;
     justify-content: center;
@@ -131,19 +126,32 @@
 
 }
 
+/**********************************************************************/
+
 .about {
     background-color: white;
     box-shadow: 0 1px 5px #bbb inset;
-    height: 80vmin;
+    height: 60vmin;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: "Heebo", sans-serif;
+    font-weight: 300;
+    text-align: justify;
+
+
 
 }
 
 .about .item {
     padding: 0.5em;
+}
+
+.about .item h1 {
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
 }
 
 .about .item img {
@@ -156,7 +164,10 @@
     text-decoration: none;
     color: black;
     border-radius: 25px;
+    font-weight: bold;
 }
+
+/**********************************************************************/
 
 .pre-projects {
     background-color: #F6F6F6;
@@ -169,7 +180,9 @@
     margin-bottom: 0;
 }
 
+
 .projects {
+    text-align: center;
     margin-top: 0;
     background-color: #F6F6F6;
     display: flex;
@@ -186,10 +199,10 @@
     flex-direction: column;
     justify-content: space-between;
     height: 25em;
-    box-shadow: 1px 1px 10px #ccc;
+    box-shadow: 3px 3px 15px #00000029;
     border: 0;
     margin: 1em;
-    border-radius: 5px;
+    border-radius: 10px;
     align-items: center;
 }
 
@@ -201,9 +214,16 @@
 }
 
 .card-img-top {
-    padding: 1vmin;
+
     width: 100%;
     height: 45%;
+}
+
+@media screen and (max-width: 500px),
+(max-height:700px) {
+    .card {
+        width: 100%;
+    }
 }
 
 a.btn {
@@ -236,24 +256,126 @@ a.btn {
     padding: 0;
 }
 
+/**********************************************************************/
 .contact {
     background-color: #3A3A3A;
-    height: 80vmin;
+    justify-content: center;
+    align-items: center;
     display: flex;
+    height: fit-content;
 }
 
 .contact .co-img {
     width: 50%;
+    align-self: flex-start;
 }
 
 .contact .co-form {
     direction: rtl;
     margin: 3em;
-    width: 50%;
+    align-self: center;
+    width: 30%;
     color: white;
 }
 
+
 .contact .co-img img {
-    width: 40vw;
+    width: 60%;
     margin-left: 2em;
+}
+
+@media screen and (max-width: 500px),
+(max-height:700px) {
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact .co-img {
+        width: 40%;
+        align-self: flex-start;
+    }
+
+    .contact .co-form {
+        direction: rtl;
+        margin: 0;
+        margin-bottom: 12vh;
+        align-self: center;
+        width: 75%;
+        color: white;
+    }
+
+
+    .contact .co-img img {
+        width: 100%;
+        margin-left: 2em;
+    }
+
+}
+
+.contact form input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #1AE0EC;
+}
+
+.contact form input#theMessage {
+    height: 8vh;
+}
+
+.contact form input#sub_button {
+    font-size: 1em;
+    width: 35%;
+    height: 4.5vh;
+    background-color: #1AE0EC;
+    text-decoration: none;
+    color: black;
+    border-radius: 25px;
+    border: 0;
+    margin: auto;
+}
+
+/**********************************************************************/
+
+.social-media {
+    background-color: #1AE0EC;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7vh;
+}
+
+.social-media .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media h6 {
+    margin: 1em;
+    font-size: 0.7em;
+}
+
+/**********************************************************************/
+
+.footer {
+    background-color: black;
+    color: #1AE0EC;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em;
+}
+
+.footer .name {
+    justify-content: flex-start;
+}
+
+.footer .cc {
+    justify-content: flex-end;
+}
+
+.line {
+    background-color: #1AE0EC;
+    height: 0.3em;
 }
